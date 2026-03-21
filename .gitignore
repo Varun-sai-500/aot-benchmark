@@ -26,7 +26,8 @@ debug/
 cym_utils/
 src/
 tracking_results/
-
+demo_output/
+img_logs/
 aot/results/
 aot/pretrain_models/
 aot/datasets/
