@@ -74,6 +74,7 @@ Optional:
 ## Model Zoo and Results
 Pre-trained models, benckmark scores, and pre-computed results reproduced by this project can be found in [MODEL_ZOO.md](MODEL_ZOO.md).
 
+
 ## Demo - Panoptic Propagation
 We provide a simple demo to demonstrate AOT's effectiveness. The demo will propagate more than **40** objects, including semantic regions (like sky) and instances (like person), together within a single complex scenario and predict its video panoptic segmentation.
 
