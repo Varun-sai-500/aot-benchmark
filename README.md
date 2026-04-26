@@ -21,14 +21,23 @@
   </a>
 </p>
 
-## News
-- `2024/03`: **AOST** - [AOST](https://arxiv.org/abs/2203.11442), the journal extension of AOT, has been accepted by TPAMI. AOST is the first scalable VOS framework supporting run-time speed-accuracy trade-offs, from real-time efficiency to SOTA performance.
-- `2023/07`: **Pyramid/Panoptic AOT** - The code of PAOT has been released in [paot](https://github.com/yoxu515/aot-benchmark/tree/paot) branch of this repository. We propose a benchmark [**VIPOSeg**](https://github.com/yoxu515/VIPOSeg-Benchmark) for panoptic VOS, and PAOT is designed to tackle the challenges in panoptic VOS and achieves SOTA performance. PAOT consists of a multi-scale architecture of LSTT (same as MS-AOT in VOT2022) and panoptic ID banks for thing and stuff. Please refer to the [paper](https://arxiv.org/abs/2305.04470) for more details.
-- `2023/07`: **WINNER** - DeAOT-based Tracker ranked **1st** in the [**VOTS 2023**](https://www.votchallenge.net/vots2023/) challenge ([leaderboard](https://eu.aihub.ml/competitions/201#results)). In detail, our [DMAOT](https://eu.aihub.ml/my/competition/submission/1139/detailed_results/) improves DeAOT by storing object-wise long-term memories instead of frame-wise long-term memories. This avoids the memory growth problem when processing long video sequences and produces better results when handling multiple objects.
-- `2023/06`: **WINNER** - DeAOT-based Tracker ranked **1st** in **two tracks** of [**EPIC-Kitchens**](https://epic-kitchens.github.io/2023) challenges ([leaderboard](http://epic-kitchens.github.io/2023)). In detail, our MS-DeAOT is a multi-scale version of DeAOT and is the winner of Semi-Supervised Video Object Segmentation (segmentation-based tracking) and TREK-150 Object Tracking (BBox-based tracking). Technical reports are coming soon.
-- `2023/04`: **SAM-Track** - We are pleased to announce the release of our latest project, [Segment and Track Anything (SAM-Track)](https://github.com/z-x-yang/Segment-and-Track-Anything). This innovative project merges two kinds of models, [SAM](https://github.com/facebookresearch/segment-anything) and our [DeAOT](https://github.com/yoxu515/aot-benchmark), to achieve seamless segmentation and efficient tracking of any objects in videos.
-- `2022/10`: **WINNER** - AOT-based Tracker ranked **1st** in **four tracks** of the **VOT 2022** challenge ([presentation of results](https://data.votchallenge.net/vot2022/vot2022_st_rt.pdf)). In detail, our MS-AOT is the winner of two segmentation tracks, VOT-STs2022 and VOT-RTs2022 (real-time). In addition, the bounding box results of MS-AOT (initialized by [AlphaRef](https://github.com/MasterBin-IIAU/AlphaRefine), and output is bounding box fitted to mask prediction) surpass the winners of two bounding box tracks, VOT-STb2022 and VOT-RTb2022 (real-time). The bounding box results were required by the organizers after the competition deadline but were highlighted in the [workshop presentation](https://data.votchallenge.net/vot2022/vot2022_st_rt.pdf) (ECCV 2022).
+## News## News
+- `2024/03`: **AOST (TPAMI)** - [AOST](https://arxiv.org/abs/2203.11442), the journal extension of AOT, has been accepted by **IEEE TPAMI**. AOST is the first scalable VOS framework supporting explicit run-time speed–accuracy trade-offs, ranging from real-time efficiency to state-of-the-art performance.
 
+- `2023/07`: **Pyramid/Panoptic AOT (PAOT, IJCAI 2023)** - The code of PAOT has been released in the [paot](https://github.com/yoxu515/aot-benchmark/tree/paot) branch. We also introduce the [**VIPOSeg**](https://github.com/yoxu515/VIPOSeg-Benchmark) benchmark for panoptic VOS. PAOT leverages a multi-scale LSTT architecture and panoptic ID banks for both thing and stuff classes, achieving SOTA performance. The work is accepted at **IJCAI 2023**.
+
+- `2023/07`: **🏆 VOTS 2023 Winner** - DeAOT-based tracker ranked **1st** in the [**VOTS 2023**](https://www.votchallenge.net/vots2023/) challenge ([leaderboard](https://eu.aihub.ml/competitions/201#results)). Our **DMAOT** improves DeAOT by introducing object-wise long-term memory, avoiding memory growth in long sequences and improving multi-object tracking performance.
+
+- `2023/06`: **🏆 EPIC-Kitchens 2023 (2× Winner)** - DeAOT-based tracker ranked **1st in two tracks** of [**EPIC-Kitchens 2023**](https://epic-kitchens.github.io/2023):
+  Semi-Supervised Video Object Segmentation and TREK-150 Object Tracking. Our **MS-DeAOT** demonstrates strong performance across both segmentation and bounding-box tracking settings.
+
+- `2023/04`: **SAM-Track** - Released [Segment and Track Anything (SAM-Track)](https://github.com/z-x-yang/Segment-and-Track-Anything), combining [SAM](https://github.com/facebookresearch/segment-anything) with DeAOT for unified segmentation and tracking of arbitrary objects in videos.
+
+- `2022/10`: **🏆 VOT 2022 (4× Winner)** - AOT-based tracker ranked **1st in four tracks** of the **VOT 2022** challenge ([presentation](https://data.votchallenge.net/vot2022/vot2022_st_rt.pdf)). MS-AOT won both segmentation tracks (VOT-STs2022, VOT-RTs2022) and its bounding-box results (derived from mask predictions) surpassed dedicated bbox trackers, as highlighted in the ECCV 2022 workshop.
+
+- `2022`: **NeurIPS Recognition** -
+  **AOT (NeurIPS 2021)** and **DeAOT (NeurIPS 2022, Spotlight)** establish the foundation of this repository, introducing transformer-based association and hierarchical propagation for scalable video object segmentation.
+  
 ## Intro
 A modular reference PyTorch implementation of AOT series frameworks:
 - **DeAOT**: Decoupling Features in Hierarchical Propagation for Video Object Segmentation (NeurIPS 2022, Spotlight) [[OpenReview](https://openreview.net/forum?id=DgM7-7eMkq0)][[PDF](https://arxiv.org/pdf/2210.09782.pdf)]
