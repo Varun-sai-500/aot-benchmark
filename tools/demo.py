@@ -114,6 +114,7 @@ def demo(cfg):
     video_fps = 15
     gpu_id = cfg.TEST_GPU_ID
     device = get_device(gpu_id)
+    print("Device:", device)
 
     # Load pre-trained model
     print('Build AOT model.')
